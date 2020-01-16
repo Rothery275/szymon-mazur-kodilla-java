@@ -20,8 +20,6 @@ build/
 *.iml
 *.ipr
 out/
-**/out/
-**/build/
 
 ### NetBeans ###
 /nbproject/private/
@@ -32,3 +30,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+**/out/
+**/build/
