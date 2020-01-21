@@ -15,17 +15,19 @@ public class TestingMain {
         }
 
         //next test
-        Calculator calculator = new Calculator();
-        double addingResult = calculator.addAToB(19.51, 56.86);
-        double subtractingResult = calculator.subtractAFromB(754.49,157.12);
+        Calculator calculator = new Calculator(158.35, 74.00);
+        double addingResult = calculator.addAToB(158.35, 74.00);
+        double subtractingResult = calculator.subtractAFromB(158.35, 74.00);
+        double testAdd = calculator.getA() + calculator.getB();
+        double testSubtract = calculator.getA() - calculator.getB();
 
-        if(addingResult == 19.51 + 56.86) {
+        if(addingResult == testAdd) {
             System.out.println("Success! Result equals: " + addingResult);
         } else {
             System.out.println("Error of adding!");
         }
 
-        if(subtractingResult == 754.49 - 157.12) {
+        if(subtractingResult == testSubtract) {
             System.out.println("Success! Result equals: " + subtractingResult);
         } else {
             System.out.println("Error of subtracting!");
